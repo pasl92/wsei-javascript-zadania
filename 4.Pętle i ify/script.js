@@ -139,4 +139,71 @@ for(let i = 1; i <= star; i++){
 
 //d
 
+let star = 5;
+let result = '';
+let separation = '-----'
+const tab2 = [1, 2, 3, 4]; 
+
+for(let i = 1; i <= star; i++){
+result += "*";
+    for(let g = 1; g < i; g++)
+    {
+      result += "*";
+      
+    }
+    for(let f = 0; f <= 4 - i; f++)
+    {
+      result += tab2[f + i - 1];
+    }
+    console.log(result);
+    result = ""
+}
+console.log(separation);
+
+for(let i = 1; i <= star; i++){
+result += "*";
+let d = 0;
+    for(let g = 1; g < star - i + 1; g++)
+    {
+      result += "*";
+      d++;
+    }
+    for(let f = 0; f <= i -2; f++)
+    {
+      result += tab2[ d + f ];
+    }
+    console.log(result);
+    result = ""
+}
+
 //e
+
+let star = 5;
+let result = '';
+
+
+for(let i = 1; i <= star; i++){
+
+    for(let x = 5; x > i; x--)
+    {
+      result += " ";
+    }
+         result += "*";
+    for(let g = 1; g < i; g++)
+    {
+      result += " *";
+    }
+    console.log(result);
+    result = ""
+}
+for(let i = 1; i <= star / 2 + 1; i++){
+
+    for(let x = 0; x < star - 1; x++)
+    {
+      result += " ";
+    }
+         result += "*";
+    
+    console.log(result);
+    result = ""
+}
