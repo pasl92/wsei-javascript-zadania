@@ -118,6 +118,25 @@ for(let i = 1; i <= star; i++){
 
 //c
 
+let star = 5;
+let result = '';
+
+
+for(let i = 1; i <= star; i++){
+
+    for(let x = 5; x > i; x--)
+    {
+      result += " ";
+    }
+         result += "*";
+    for(let g = 1; g < i; g++)
+    {
+      result += "**";
+    }
+    console.log(result);
+    result = ""
+}
+
 //d
 
 //e
