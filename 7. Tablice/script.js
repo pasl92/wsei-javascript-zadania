@@ -34,7 +34,7 @@ tab.forEach(el => {
     }
 });
 
-//Zadanie 3
+//Zad 3
 
 const t2 = [1, 2, 3, 4, 5, 22, 33, 44];
 //1
@@ -108,3 +108,31 @@ const averageArrFunc1 = (arr = []) => {
 console.log(averageArrFunc1([9, 1, 7, 2, 1, 1, 6, 3, 2]));
 
 //zad 7
+
+function foo(arr){
+    return (arr.sort((a, b) => a - b));
+}
+console.log(foo([5,3,2,10,8]));
+
+// zad 8
+
+
+function foo(x,y){ 
+    return (x.length + y.length);
+    
+}
+console.log(foo([1,2,3,4,5],[5,4,3,2,1]));
+
+//Zad 9 
+
+function foo(x,y){ 
+    return x.filter(z => z != y);
+}
+console.log(foo([1,2,3,4,5],3));
+
+//Zad 10
+
+function foo(arr){
+    return arr.map((val) => -val);
+}
+console.log(foo([1,-2,3,-4,5]));
